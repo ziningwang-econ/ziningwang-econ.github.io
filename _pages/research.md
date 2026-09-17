@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-### Publications
+## Publications
 
 **Local Favoritism in State Formation**. with Se Yan and Zhengkai Yang, *Journal of Economic History*, forthcoming.
 
