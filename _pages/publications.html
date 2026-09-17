@@ -1,36 +1,41 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+## Publications
 
-{% include base_path %}
+**Local Favoritism in State Formation**, with Se Yan and Zhengkai Yang, *Journal of Economic History*, forthcoming.  
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+## Working Papers
+
+**Buying Stability: Civil Service Quotas and Elite Co-optation in Imperial China**  
+with Se Yan  
+July 2026  
+[SSRN]
+
+**The Daughters of Disaster: Famine, Gender Preferences, and Cohort Sex Ratios in China**  
+May 2026  
+[SSRN]
+
+**Human Infrastructure of Treaty-Port Capitalism, 1868–1941**  
+with Yanran Li  
+September 2026
+
+**Disaster Legacies and Financial Risk-Taking**  
+with Wenbo Jia, Zhengkai Yang, and Se Yan  
+August 2026
+
+## Work in Progress
+
+**Witches in the Market: Commercialization and Social Order**  
+with Xiao Han and Zhengkai Yang
+
+**Trade Shocks and Strategic Cadre Assignment**  
+with Zhengkai Yang
+
 
 
 
