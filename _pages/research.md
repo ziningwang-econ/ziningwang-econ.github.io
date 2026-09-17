@@ -7,15 +7,19 @@ author_profile: true
 
 ## Publications
 
-**Local Favoritism in State Formation**, with Se Yan and Zhengkai Yang, *Journal of Economic History*, forthcoming.
+**Local Favoritism in State Formation**
+with Se Yan and Zhengkai Yang, *Journal of Economic History*, forthcoming.
 
 ## Working Papers
 
-**Buying Stability: Civil Service Quotas and Elite Co-optation in Imperial China**, with Se Yan, July 2026
+**Buying Stability: Civil Service Quotas and Elite Co-optation in Imperial China**
+with Se Yan, July 2026
 
-**The Daughters of Disaster: Famine, Gender Preferences, and Cohort Sex Ratios in China**, *reject and resubmit at Journal of Population Economics*
+**The Daughters of Disaster: Famine, Gender Preferences, and Cohort Sex Ratios in China**
+*reject and resubmit at Journal of Population Economics*, May 2026
 
-**Disaster Legacies and Financial Risk-Taking**, with Wenbo Jia, Zhengkai Yang, and Se Yan  
+**Disaster Legacies and Financial Risk-Taking**
+with Wenbo Jia, Zhengkai Yang, and Se Yan, August 2026
 
 ## Work in Progress
 
