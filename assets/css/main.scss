@@ -37,3 +37,29 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Compact collapsible abstracts on Research page */
+.paper-abstract {
+  margin-top: -0.75em;
+  margin-bottom: 0.9em;
+}
+
+.paper-abstract summary {
+  width: fit-content;
+  cursor: pointer;
+  color: #6baed6;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.paper-abstract summary:hover {
+  color: #3f8fc1;
+  text-decoration: underline;
+}
+
+.paper-abstract p {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  line-height: 1.55;
+}
