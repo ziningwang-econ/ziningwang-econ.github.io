@@ -17,6 +17,8 @@ author_profile: true
 
 **Disaster Legacies and Financial Risk-Taking**. with Wenbo Jia, Zhengkai Yang, and Se Yan
 
+<!--
 ## Work in Progress
 
 **Witches in the Market: Commercialization and Social Order**. with Xiao Han and Zhengkai Yang
+-->
