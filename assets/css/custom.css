@@ -58,14 +58,10 @@
 
 
   /* ---------------------------------------------------------
-     Biography / About
+     Biography
      --------------------------------------------------------- */
 
-  /*
-     Hide the entire "About" heading row:
-     - purple identification icon
-     - About text
-  */
+  /* Hide the entire About heading row */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -75,7 +71,7 @@
     display: none !important;
   }
 
-  /* Reduce spacing below the biography */
+  /* Reduce spacing below biography */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -85,11 +81,13 @@
   }
 
   /*
-     Make biography larger and let it extend across
-     the full width of the right column.
+     Biography width:
+     76ch was slightly too narrow,
+     full width was too long,
+     88ch is the middle ground.
   */
   .resume-biography .bio-text {
-    max-width: none !important;
+    max-width: 88ch !important;
     width: 100% !important;
     font-size: 1.12rem !important;
     line-height: 1.58 !important;
@@ -97,13 +95,13 @@
 
   /* Override HugoBlox prose sizing */
   .resume-biography .prose {
-    max-width: none !important;
+    max-width: 88ch !important;
     width: 100% !important;
     font-size: 1.12rem !important;
     line-height: 1.58 !important;
   }
 
-  /* Paragraph spacing inside the biography */
+  /* Paragraph spacing inside biography */
   .resume-biography .bio-text p {
     margin-top: 0 !important;
     margin-bottom: 1.15rem !important;
@@ -113,11 +111,6 @@
   /* =========================================================
      Education — traditional academic list
      ========================================================= */
-
-  /*
-     The Education section is the .mb-16 section containing
-     HugoBlox's education grid.
-  */
 
   /* Reduce Education section spacing */
   .resume-biography
@@ -139,7 +132,7 @@
     gap: 0 !important;
   }
 
-  /* Remove large purple icon beside "Education" */
+  /* Remove large purple icon beside Education */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -179,7 +172,6 @@
     gap: 0.8rem !important;
   }
 
-
   /* Remove card appearance */
   .resume-biography
   > .max-w-7xl
@@ -197,7 +189,7 @@
     backdrop-filter: none !important;
   }
 
-  /* Disable card hover effects */
+  /* Disable hover effects */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -213,7 +205,7 @@
 
 
   /* ---------------------------------------------------------
-     Each education entry
+     Each Education entry
      --------------------------------------------------------- */
 
   .resume-biography
@@ -228,11 +220,7 @@
     align-items: flex-start !important;
   }
 
-
-  /*
-     Graduation-cap icon:
-     keep the icon, but remove the white circular card around it.
-  */
+  /* Graduation-cap icon */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -249,7 +237,6 @@
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    ring: none !important;
 
     margin-top: 0.1rem !important;
   }
@@ -298,16 +285,11 @@
     font-size: 1.02rem !important;
     line-height: 1.35 !important;
     font-weight: 600 !important;
-
     color: inherit !important;
-
     margin: 0 !important;
   }
 
-  /*
-     Remove the blue hover color HugoBlox normally applies
-     to degree names.
-  */
+  /* Remove hover color change from degree names */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -332,7 +314,6 @@
   > p:nth-child(2) {
     font-size: 0.98rem !important;
     line-height: 1.35 !important;
-
     margin: 0 !important;
   }
 
@@ -360,10 +341,8 @@
   .flex-1
   > p:nth-child(3) {
     grid-column: 1 / -1 !important;
-
     font-size: 0.92rem !important;
     line-height: 1.35 !important;
-
     margin: 0.08rem 0 0 !important;
   }
 }
@@ -380,7 +359,7 @@
     padding-bottom: 1.5rem !important;
   }
 
-  /* Hide About heading on mobile too */
+  /* Hide About heading on mobile */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -390,11 +369,11 @@
     display: none !important;
   }
 
+  /* Mobile biography */
   .resume-biography .bio-text,
   .resume-biography .prose {
     max-width: none !important;
     width: 100% !important;
-
     font-size: 1rem !important;
     line-height: 1.55 !important;
   }
