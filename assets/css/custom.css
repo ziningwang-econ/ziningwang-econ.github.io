@@ -395,3 +395,8 @@ footer {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
+
+/* Reduce bottom whitespace on landing pages */
+.page-body section:last-child {
+  padding-bottom: 2rem !important;
+}
