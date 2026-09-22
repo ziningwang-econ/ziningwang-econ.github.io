@@ -6,7 +6,7 @@
 main:
   - name: Research
     url: /research/
-    weight: 10
+    weight: 20
 
   - name: CV
     url: /cv/
