@@ -27,7 +27,7 @@ sections:
         <div class="rs-title">Local Favoritism in State Formation</div>
         <div class="rs-meta">with Se Yan and Zhengkai Yang</div>
         <div class="rs-meta">Forthcoming at <span class="rs-venue">Journal of Economic History</span></div>
-        <a class="rs-btn" href="https://ssrn.com/abstract=XXXXXXX" target="_blank" rel="noopener">SSRN</a>
+        <a class="rs-btn" href="[https://ssrn.com/abstract=XXXXXXX](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5244436)" target="_blank" rel="noopener">SSRN</a>
         </div>
         </div>
         <div class="rs-section">
@@ -37,14 +37,12 @@ sections:
         <div class="rs-title">Buying Stability: Civil Service Quotas and Elite Co-optation in Imperial China</div>
         <div class="rs-meta">with Se Yan</div>
         <div class="rs-meta">July 2026 · Under Review</div>
-        <div class="rs-note">Presented at APEBH (Adelaide); International Symposium on Quantitative History (CCNU)</div>
-        <a class="rs-btn" href="https://ssrn.com/abstract=XXXXXXX" target="_blank" rel="noopener">SSRN</a>
+        <a class="rs-btn" href="[https://ssrn.com/abstract=XXXXXXX](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6841238)" target="_blank" rel="noopener">SSRN</a>
         </div>
         <div class="rs-item">
         <div class="rs-title">The Daughters of Disaster: Famine, Gender Preferences, and Cohort Sex Ratios in China</div>
-        <div class="rs-meta">Solo-authored</div>
         <div class="rs-meta">May 2026 · Reject and Resubmit at <span class="rs-venue">Journal of Population Economics</span></div>
-        <a class="rs-btn" href="https://ssrn.com/abstract=XXXXXXX" target="_blank" rel="noopener">SSRN</a>
+        <a class="rs-btn" href="[https://ssrn.com/abstract=XXXXXXX](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6851699)" target="_blank" rel="noopener">SSRN</a>
         </div>
         <div class="rs-item">
         <div class="rs-title">Disaster Legacies and Financial Risk-Taking</div>
