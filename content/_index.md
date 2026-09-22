@@ -8,12 +8,10 @@ sections:
   - block: resume-biography-3
     content:
       username: me
-
-      # 留空时使用 data/authors/me.yaml 里的 bio
       text: ''
 
       headings:
-        about: ''
+        about: Professional Summary
         interests: Interests
         education: Education
 
@@ -23,12 +21,14 @@ sections:
           enable: false
 
       avatar:
-        size: xl
+        size: medium
         shape: rounded
 
       name:
-        size: md
+        size: xs
 
       biography:
-        style: "max-width: 75ch;"
+        style: "max-width: 60ch; font-size: 0.95rem; line-height: 1.45;"
+
+      css_class: compact-academic-home
 ---
