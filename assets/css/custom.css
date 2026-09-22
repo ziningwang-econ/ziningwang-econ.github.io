@@ -88,3 +88,197 @@
     height: 2.5rem !important;
   }
 }
+
+/* =========================================================
+   Academic homepage refinements
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  /* Make the whole content area a little wider */
+  .resume-biography > .max-w-7xl {
+    max-width: 88rem !important;
+  }
+
+  /* Slightly more space between profile column and biography */
+  .resume-biography > .max-w-7xl > .grid {
+    column-gap: 3rem !important;
+  }
+
+  /* Bio: slightly larger and wider */
+  .resume-biography .bio-text {
+    max-width: 76ch !important;
+    font-size: 1.08rem !important;
+    line-height: 1.58 !important;
+  }
+
+
+  /* =======================================================
+     Education — simple academic list
+     ======================================================= */
+
+  /* Less space above/below Education */
+  .resume-biography .md\:col-span-8 > .mb-16 {
+    margin-bottom: 1rem !important;
+  }
+
+  /* Reduce spacing below Education heading */
+  .resume-biography .md\:col-span-8 > .mb-16 > .flex.items-center {
+    margin-bottom: 1rem !important;
+  }
+
+  /* Remove the large purple icon beside "Education" */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .flex.items-center
+  > div:first-child {
+    display: none !important;
+  }
+
+  /* Education heading */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .flex.items-center
+  h3 {
+    font-size: 1.45rem !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Turn card grid into a vertical list */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
+
+  /* Remove card appearance */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    backdrop-filter: none !important;
+    min-height: 0 !important;
+  }
+
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group:hover {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  /* One education row */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  > .flex {
+    gap: 0.75rem !important;
+    align-items: flex-start !important;
+  }
+
+  /* Small graduation cap, like a normal list icon */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-shrink-0 {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin-top: 0.1rem !important;
+  }
+
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-shrink-0 svg {
+    width: 1.15rem !important;
+    height: 1.15rem !important;
+  }
+
+  /* Degree + year */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-1 {
+    display: grid !important;
+    grid-template-columns: max-content max-content !important;
+    column-gap: 0 !important;
+    align-items: baseline !important;
+  }
+
+  /* Degree */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-1
+  > p:first-child {
+    font-size: 1.05rem !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+  }
+
+  /* Year */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-1
+  > p:nth-child(2) {
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+  }
+
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-1
+  > p:nth-child(2)::before {
+    content: ", ";
+  }
+
+  /* Institution on second line */
+  .resume-biography
+  .md\:col-span-8
+  > .mb-16
+  > .grid
+  > .group
+  .flex-1
+  > p:nth-child(3) {
+    grid-column: 1 / -1 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.35 !important;
+    margin: 0.1rem 0 0 !important;
+  }
+}
