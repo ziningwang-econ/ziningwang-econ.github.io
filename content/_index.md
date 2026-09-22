@@ -11,8 +11,8 @@ sections:
       text: ''
 
       headings:
-        about: Professional Summary
-        interests: Interests
+        about: About
+        interests: ''
         education: Education
 
     design:
