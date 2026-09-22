@@ -87,7 +87,7 @@
      88ch is the middle ground.
   */
   .resume-biography .bio-text {
-    max-width: 88ch !important;
+    max-width: 82ch !important;
     width: 100% !important;
     font-size: 1.12rem !important;
     line-height: 1.58 !important;
@@ -95,7 +95,7 @@
 
   /* Override HugoBlox prose sizing */
   .resume-biography .prose {
-    max-width: 88ch !important;
+    max-width: 82ch !important;
     width: 100% !important;
     font-size: 1.12rem !important;
     line-height: 1.58 !important;
