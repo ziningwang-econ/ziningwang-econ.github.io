@@ -47,11 +47,6 @@ sections:
         <a class="rs-btn" href="https://ssrn.com/abstract=XXXXXXX" target="_blank" rel="noopener">SSRN</a>
         </div>
         <div class="rs-item">
-        <div class="rs-title">Human Infrastructure of Treaty-Port Capitalism, 1868–1941</div>
-        <div class="rs-meta">with Yanran Li</div>
-        <div class="rs-meta">September 2026 · Under Review</div>
-        </div>
-        <div class="rs-item">
         <div class="rs-title">Disaster Legacies and Financial Risk-Taking</div>
         <div class="rs-meta">with Wenbo Jia, Zhengkai Yang, and Se Yan</div>
         <div class="rs-meta">August 2026 · Under Review</div>
