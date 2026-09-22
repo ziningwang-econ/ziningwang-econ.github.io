@@ -28,7 +28,7 @@ sections:
         size: xs
 
       biography:
-        style: "max-width: 76ch; font-size: 1.08rem; line-height: 1.58;"
+        style: "max-width: none; width: 100%; font-size: 1.12rem; line-height: 1.58;"
 
       css_class: compact-academic-home
 ---
