@@ -83,7 +83,7 @@ hugoblox:
     enable: true
     style: navbar
     sticky: true
-    align: center
+    align: left
     search: false
     theme_toggle: true
     theme_picker: false
