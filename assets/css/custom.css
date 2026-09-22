@@ -389,3 +389,9 @@
     line-height: 1.55 !important;
   }
 }
+
+footer {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
