@@ -1,135 +1,149 @@
 /* =========================================================
-   Compact academic homepage
+   Compact traditional academic homepage
    ========================================================= */
 
 @media (min-width: 768px) {
 
-  /* Reduce the very large vertical padding of Resume Biography 3 */
-  .compact-academic-home .resume-biography,
-  .resume-biography.compact-academic-home,
-  .compact-academic-home.resume-biography {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+  /* ---------------------------------------------------------
+     Overall layout
+     --------------------------------------------------------- */
+
+  /* Reduce HugoBlox's very large vertical padding */
+  .resume-biography {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
   }
 
-  /* In case HugoBlox applies the custom class to the wrapper */
-  .compact-academic-home .resume-biography {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+  /* Allow the homepage to use more horizontal space */
+  .resume-biography > .max-w-7xl {
+    max-width: 96rem !important;
   }
 
-  /* Reduce spacing between the left and right columns */
+  /* Space between left profile column and right content column */
   .resume-biography > .max-w-7xl > .grid {
-    gap: 1.5rem !important;
+    column-gap: 3.5rem !important;
+    row-gap: 1.5rem !important;
   }
 
-  /* Reduce internal vertical gaps */
-  .resume-biography .mb-16 {
-    margin-bottom: 1.5rem !important;
+
+  /* ---------------------------------------------------------
+     Left profile column
+     --------------------------------------------------------- */
+
+  /* Slightly reduce vertical spacing between photo/name/role/etc. */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:first-child {
+    gap: 1.25rem !important;
   }
 
-  .resume-biography .mb-12 {
-    margin-bottom: 1.5rem !important;
-  }
-
-  .resume-biography .mb-8 {
-    margin-bottom: 0.75rem !important;
-  }
-
-  /* Headings: Professional Summary / Education / Interests */
-  .resume-biography h2,
-  .resume-biography h3 {
-    font-size: 1.45rem !important;
-    line-height: 1.2 !important;
-  }
-
-  /* Biography paragraph */
-  .resume-biography .prose {
-    font-size: 0.95rem !important;
-    line-height: 1.45 !important;
-  }
-
-  /* Role under the name */
+  /* Role */
   .resume-biography p.text-2xl.font-semibold {
     font-size: 1.05rem !important;
+    line-height: 1.35 !important;
   }
 
   /* University / affiliation */
   .resume-biography p.text-lg {
     font-size: 0.95rem !important;
+    line-height: 1.4 !important;
   }
 
-  /* Education cards */
-  .resume-biography .group.h-full.flex.flex-col {
-    padding: 0.85rem !important;
-  }
-
-  /* Education degree names */
-  .resume-biography .group p.text-xl {
-    font-size: 1rem !important;
-    line-height: 1.25 !important;
-  }
-
-  /* Education / summary heading icons */
-  .resume-biography .flex-shrink-0.w-12.h-12 {
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-  }
-
-  /* Interests tags */
-  .resume-biography span.inline-block {
-    font-size: 0.9rem !important;
-    padding: 0.3rem 0.7rem !important;
-  }
-
-  /* Social buttons slightly smaller */
+  /* Social buttons */
   .resume-biography a.w-12.h-12 {
     width: 2.5rem !important;
     height: 2.5rem !important;
   }
-}
 
-/* =========================================================
-   Academic homepage refinements
-   ========================================================= */
 
-@media (min-width: 768px) {
+  /* ---------------------------------------------------------
+     Biography / About
+     --------------------------------------------------------- */
 
-  /* Make the whole content area a little wider */
-  .resume-biography > .max-w-7xl {
-    max-width: 88rem !important;
+  /*
+     Hide the entire "About" heading row:
+     - purple identification icon
+     - About text
+  */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-12
+  > .flex.items-center {
+    display: none !important;
   }
 
-  /* Slightly more space between profile column and biography */
-  .resume-biography > .max-w-7xl > .grid {
-    column-gap: 3rem !important;
+  /* Reduce spacing below the biography */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-12 {
+    margin-bottom: 1.75rem !important;
   }
 
-  /* Bio: slightly larger and wider */
+  /*
+     Make biography larger and let it extend across
+     the full width of the right column.
+  */
   .resume-biography .bio-text {
-    max-width: 76ch !important;
-    font-size: 1.08rem !important;
+    max-width: none !important;
+    width: 100% !important;
+    font-size: 1.12rem !important;
     line-height: 1.58 !important;
   }
 
-
-  /* =======================================================
-     Education — simple academic list
-     ======================================================= */
-
-  /* Less space above/below Education */
-  .resume-biography .md\:col-span-8 > .mb-16 {
-    margin-bottom: 1rem !important;
+  /* Override HugoBlox prose sizing */
+  .resume-biography .prose {
+    max-width: none !important;
+    width: 100% !important;
+    font-size: 1.12rem !important;
+    line-height: 1.58 !important;
   }
 
-  /* Reduce spacing below Education heading */
-  .resume-biography .md\:col-span-8 > .mb-16 > .flex.items-center {
-    margin-bottom: 1rem !important;
+  /* Paragraph spacing inside the biography */
+  .resume-biography .bio-text p {
+    margin-top: 0 !important;
+    margin-bottom: 1.15rem !important;
   }
 
-  /* Remove the large purple icon beside "Education" */
+
+  /* =========================================================
+     Education — traditional academic list
+     ========================================================= */
+
+  /*
+     The Education section is the .mb-16 section containing
+     HugoBlox's education grid.
+  */
+
+  /* Reduce Education section spacing */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-16 {
+    margin-bottom: 1rem !important;
+  }
+
+  /* Education heading row */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-16
+  > .flex.items-center {
+    margin-bottom: 0.9rem !important;
+    gap: 0 !important;
+  }
+
+  /* Remove large purple icon beside "Education" */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .flex.items-center
   > div:first-child {
@@ -138,17 +152,26 @@
 
   /* Education heading */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .flex.items-center
   h3 {
-    font-size: 1.45rem !important;
+    font-size: 1.4rem !important;
     line-height: 1.25 !important;
+    margin: 0 !important;
   }
 
-  /* Turn card grid into a vertical list */
+
+  /* ---------------------------------------------------------
+     Turn Education cards into a simple vertical list
+     --------------------------------------------------------- */
+
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid {
     display: flex !important;
@@ -156,9 +179,12 @@
     gap: 0.8rem !important;
   }
 
+
   /* Remove card appearance */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group {
@@ -167,12 +193,15 @@
     border-radius: 0 !important;
     box-shadow: none !important;
     padding: 0 !important;
-    backdrop-filter: none !important;
     min-height: 0 !important;
+    backdrop-filter: none !important;
   }
 
+  /* Disable card hover effects */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group:hover {
@@ -182,45 +211,70 @@
     transform: none !important;
   }
 
-  /* One education row */
+
+  /* ---------------------------------------------------------
+     Each education entry
+     --------------------------------------------------------- */
+
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   > .flex {
-    gap: 0.75rem !important;
+    gap: 0.65rem !important;
     align-items: flex-start !important;
   }
 
-  /* Small graduation cap, like a normal list icon */
+
+  /*
+     Graduation-cap icon:
+     keep the icon, but remove the white circular card around it.
+  */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   .flex-shrink-0 {
-    width: 1.8rem !important;
-    height: 1.8rem !important;
+    width: 1.55rem !important;
+    height: 1.55rem !important;
+    min-width: 1.55rem !important;
+
     background: transparent !important;
-    box-shadow: none !important;
     border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    ring: none !important;
+
     margin-top: 0.1rem !important;
   }
 
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   .flex-shrink-0 svg {
-    width: 1.15rem !important;
-    height: 1.15rem !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
   }
 
-  /* Degree + year */
+
+  /* ---------------------------------------------------------
+     Degree + year + institution
+     --------------------------------------------------------- */
+
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
@@ -233,33 +287,60 @@
 
   /* Degree */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   .flex-1
   > p:first-child {
-    font-size: 1.05rem !important;
+    font-size: 1.02rem !important;
     line-height: 1.35 !important;
     font-weight: 600 !important;
+
+    color: inherit !important;
+
     margin: 0 !important;
+  }
+
+  /*
+     Remove the blue hover color HugoBlox normally applies
+     to degree names.
+  */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-16
+  > .grid
+  > .group:hover
+  .flex-1
+  > p:first-child {
+    color: inherit !important;
   }
 
   /* Year */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   .flex-1
   > p:nth-child(2) {
-    font-size: 1rem !important;
+    font-size: 0.98rem !important;
     line-height: 1.35 !important;
+
     margin: 0 !important;
   }
 
+  /* Add comma between degree and year */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
@@ -270,15 +351,51 @@
 
   /* Institution on second line */
   .resume-biography
-  .md\:col-span-8
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
   > .mb-16
   > .grid
   > .group
   .flex-1
   > p:nth-child(3) {
     grid-column: 1 / -1 !important;
-    font-size: 0.95rem !important;
+
+    font-size: 0.92rem !important;
     line-height: 1.35 !important;
-    margin: 0.1rem 0 0 !important;
+
+    margin: 0.08rem 0 0 !important;
+  }
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .resume-biography {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Hide About heading on mobile too */
+  .resume-biography
+  > .max-w-7xl
+  > .grid
+  > div:nth-child(2)
+  > .mb-12
+  > .flex.items-center {
+    display: none !important;
+  }
+
+  .resume-biography .bio-text,
+  .resume-biography .prose {
+    max-width: none !important;
+    width: 100% !important;
+
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
   }
 }
