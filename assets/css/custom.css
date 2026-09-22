@@ -10,8 +10,8 @@
 
   /* Reduce HugoBlox's very large vertical padding */
   .resume-biography {
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
   }
 
   /* Allow the homepage to use more horizontal space */
