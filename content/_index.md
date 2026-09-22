@@ -6,6 +6,7 @@ type: landing
 
 sections:
   - block: resume-biography-3
+
     content:
       username: me
       text: ''
@@ -16,6 +17,14 @@ sections:
         education: Education
 
     design:
+      # Reduce whitespace around the homepage block
+      spacing:
+        padding:
+          - "0.5rem"
+          - "0"
+          - "1rem"
+          - "0"
+
       background:
         gradient_mesh:
           enable: false
@@ -29,6 +38,6 @@ sections:
 
       biography:
         style: "max-width: 72ch; width: 100%; font-size: 1.12rem; line-height: 1.58;"
-    
+
       css_class: compact-academic-home
 ---
