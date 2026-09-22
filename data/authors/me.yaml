@@ -13,7 +13,7 @@ postnominals:
   - MIEEE
 status:
   icon: "☕️"
-role: PhD Candidate in Economics
+role: ''
 bio: |
   Welcome to my homepage!
 
@@ -25,7 +25,7 @@ bio: |
   and the political economy of bureaucratic institutions.
 
 affiliations:
-  - name: Guanghua School of Management, Peking University
+  - name: PhD Candidate in Economics, Peking University
     url: ''
 
 links:
@@ -47,11 +47,11 @@ interests: []
 
 education:
   - degree: Ph.D. in Economics
-    institution: Peking University
+    institution: Guanghua School of Management, Peking University
     year: "Expected 2029"
 
   - degree: B.A. in Economics
-    institution: Peking University
+    institution: Guanghua School of Management, Peking University
     year: "2024"
 
 experience:
