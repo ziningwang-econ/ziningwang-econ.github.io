@@ -8,7 +8,7 @@
      Overall layout
      --------------------------------------------------------- */
 
-  /* Reduce HugoBlox's very large vertical padding */
+  /* Reduce HugoBlox's large vertical padding */
   .resume-biography {
     padding-top: 1.75rem !important;
     padding-bottom: 1.75rem !important;
@@ -30,7 +30,7 @@
      Left profile column
      --------------------------------------------------------- */
 
-  /* Slightly reduce vertical spacing between photo/name/role/etc. */
+  /* Reduce spacing between photo / name / role / affiliation */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -61,7 +61,7 @@
      Biography
      --------------------------------------------------------- */
 
-  /* Hide the entire About heading row */
+  /* Hide About title and purple icon */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -71,7 +71,7 @@
     display: none !important;
   }
 
-  /* Reduce spacing below biography */
+  /* Space between biography and Education */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -80,12 +80,7 @@
     margin-bottom: 1.75rem !important;
   }
 
-  /*
-     Biography width:
-     76ch was slightly too narrow,
-     full width was too long,
-     88ch is the middle ground.
-  */
+  /* Biography width and typography */
   .resume-biography .bio-text {
     max-width: 72ch !important;
     width: 100% !important;
@@ -93,7 +88,7 @@
     line-height: 1.58 !important;
   }
 
-  /* Override HugoBlox prose sizing */
+  /* Override HugoBlox prose width */
   .resume-biography .prose {
     max-width: 72ch !important;
     width: 100% !important;
@@ -101,7 +96,7 @@
     line-height: 1.58 !important;
   }
 
-  /* Paragraph spacing inside biography */
+  /* Paragraph spacing */
   .resume-biography .bio-text p {
     margin-top: 0 !important;
     margin-bottom: 1.15rem !important;
@@ -189,7 +184,7 @@
     backdrop-filter: none !important;
   }
 
-  /* Disable hover effects */
+  /* Disable card hover effects */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -258,6 +253,10 @@
      Degree + year + institution
      --------------------------------------------------------- */
 
+  /*
+     Use flex instead of grid so the year sits immediately
+     after the degree without a large artificial gap.
+  */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -266,10 +265,11 @@
   > .grid
   > .group
   .flex-1 {
-    display: grid !important;
-    grid-template-columns: max-content max-content !important;
-    column-gap: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
     align-items: baseline !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
   }
 
   /* Degree */
@@ -282,14 +282,18 @@
   > .group
   .flex-1
   > p:first-child {
+    flex: 0 0 auto !important;
+
     font-size: 1.02rem !important;
     line-height: 1.35 !important;
     font-weight: 600 !important;
+
     color: inherit !important;
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Remove hover color change from degree names */
+  /* Prevent hover color change */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -312,12 +316,16 @@
   > .group
   .flex-1
   > p:nth-child(2) {
+    flex: 0 0 auto !important;
+
     font-size: 0.98rem !important;
     line-height: 1.35 !important;
+
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Add comma between degree and year */
+  /* Add comma directly between degree and year */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -330,7 +338,7 @@
     content: ", ";
   }
 
-  /* Institution on second line */
+  /* Institution on its own second line */
   .resume-biography
   > .max-w-7xl
   > .grid
@@ -340,10 +348,13 @@
   > .group
   .flex-1
   > p:nth-child(3) {
-    grid-column: 1 / -1 !important;
+    flex: 0 0 100% !important;
+
     font-size: 0.92rem !important;
     line-height: 1.35 !important;
+
     margin: 0.08rem 0 0 !important;
+    padding: 0 !important;
   }
 }
 
