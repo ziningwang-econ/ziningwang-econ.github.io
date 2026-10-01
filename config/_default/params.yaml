@@ -21,11 +21,10 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "Zining Wang is a Ph.D. candidate in Economics at Peking University, researching economic history and political economy."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
+      twitter: "" # Add your own Twitter/X handle if needed.
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -134,7 +133,7 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
+      note: "Academic profile, publications, and working papers of Zining Wang."
       contact: ""
 
   # ────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,9 @@
+# HugoBlox compiles its styles with the project's installed Tailwind CLI.
+exec:
+  allow:
+    - '^(dart-)?sass$'
+    - '^go$'
+    - '^git$'
+    - '^node$'
+    - '^postcss$'
+    - '^tailwindcss$'
