@@ -40,8 +40,8 @@ sections:
         <div class="rs-meta">July 2026 &middot; Under Review &middot; <a class="rs-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6841238" target="_blank" rel="noopener">SSRN</a></div>
         </div>
         <div class="rs-item">
-        <div class="rs-title">The Daughters of Disaster: Famine, Gender Preferences, and Cohort Sex Ratios in China</div>
-        <div class="rs-meta">May 2026 &middot; Reject and Resubmit at <span class="rs-venue">Journal of Population Economics</span> &middot; <a class="rs-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6851699" target="_blank" rel="noopener">SSRN</a></div>
+        <div class="rs-title">The Gender of Recovery</div>
+        <div class="rs-meta">October 2026 &middot; Reject and Resubmit at <span class="rs-venue">Journal of Population Economics</span> &middot; <a class="rs-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6851699" target="_blank" rel="noopener">SSRN</a></div>
         </div>
         <div class="rs-item">
         <div class="rs-title">Disaster Legacies and Financial Risk-Taking</div>
